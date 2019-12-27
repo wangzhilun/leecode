@@ -1,7 +1,6 @@
 package com.wzl.leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
 /**
@@ -41,5 +40,35 @@ public class TowSum {
             map.put(nums[i], i);
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(numJewelsInStones("aA", "aAAbbbb"));
+    }
+
+    public int findNumbers(int[] nums) {
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if ((Math.log10(i) + 1) / 2 > 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int numJewelsInStones(String J, String S) {
+        char[] chars = J.toCharArray();
+        int count = 0;
+        HashSet hashSet = new HashSet();
+        for (char c: chars) {
+            hashSet.add(c);
+        }
+        char[] chars1 = S.toCharArray();
+        for (char c : chars1) {
+            if (hashSet.contains(c)) {
+                count++;
+            }
+        }
+        return count;
     }
 }

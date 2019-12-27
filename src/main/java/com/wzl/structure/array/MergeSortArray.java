@@ -1,13 +1,12 @@
-package com.wzl.leetcode;
+package com.wzl.structure.array;
 
 /**
  * 归并排序
  *
- *
  * @author zhilun.wang @ximalaya.com
  * @date 20191225 10:28:37
  */
-public class MergeSort {
+public class MergeSortArray {
 
     public static void main(String[] args) {
         int[] ans = {6, 8, 4, 4, 6, 36, 673, 13, 6, 7, 3, 4, 6, 8, 3, 7, 5, 7, 9, 5};
